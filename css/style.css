@@ -4,6 +4,61 @@
     box-sizing: 0;
 }
 
+.bg-img-0{
+    background-image: url(../img/praia-da-falesia.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: absolute;
+    height: 100vh;
+    width: 100%;
+    z-index: -1;
+}
+
+.bg-img-1{
+    background-image: url(../img/praia-da-marinha.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: absolute;
+    height: 100vh;
+    width: 100%;
+    z-index: -1;
+}
+
+.bg-img-2{
+    background-image: url(../img/praia-da-rocha.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: absolute;
+    height: 100vh;
+    width: 100%;
+    z-index: -1;
+}
+
+.bg-img-3{
+    background-image: url(../img/praia-de-dona-ana.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: absolute;
+    height: 100vh;
+    width: 100%;
+    z-index: -1;
+}
+
+.bg-img-4{
+    background-image: url(../img/praia-do-camilo.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: absolute;
+    height: 100vh;
+    width: 100%;
+    z-index: -1;
+}
+
 #slider .container{
     width: 70%;
     margin: auto;
@@ -21,6 +76,17 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    color: rgb(17, 67, 120);
+    font-size: 18px;
+}
+
+#slider .container .arr>i{
+    height: 30px;
+    width: 30px;
+    text-align: center;
+    line-height: 30px;
+    border-radius: 50%;
+    background-color: rgba(0, 0, 0, 0.5);;
 }
 
 #slider .container .photos-cont{

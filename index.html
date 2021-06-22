@@ -15,6 +15,7 @@
 <body>
 
     <div id="root">
+        <div :class="'bg-img-' + counter"></div>
         <section id="slider">
             <div class="container">
                 <!-- left side (prev arr)-->
@@ -23,7 +24,7 @@
                 </div>
                 <!-- middle (photos) -->
                 <div class="middle photos-cont">
-                    <img  :src="'img/' + imgs[counter]" :alt="alts[counter]">
+                    <img :src="'img/' + imgs[counter]" :alt="alts[counter]">
 
                     <div class="nav-imgs">
                         <i @click="counter = index" :class="(index == counter) ? 'active' : ''" v-for="(img, index) in imgs" class="fas fa-umbrella-beach"></i>

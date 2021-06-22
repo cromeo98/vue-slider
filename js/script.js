@@ -29,7 +29,7 @@ const app = new Vue(
             decreaseCounter(){
                 // condition ? exprIfTrue : exprIfFalse
                 (this.counter == 0) ? this.counter = this.imgs.length - 1 : this.counter--;
-            }
+            },
         }
     }
 );
