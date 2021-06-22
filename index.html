@@ -19,16 +19,16 @@
             <div class="container">
                 <!-- left side (prev arr)-->
                 <div class="left arr">
-                    <i class="fas fa-chevron-left"></i>
+                    <i @click="decreaseCounter" class="fas fa-chevron-left"></i>
                 </div>
                 <!-- middle (photos) -->
                 <div class="middle photos-cont">
-                    <img :src="'img/' + imgs[0]" :alt="alts[0]">
+                    <img :src="'img/' + imgs[counter]" :alt="alts[counter]">
                 </div>
 
                 <!-- right side (next arr)-->
                 <div class="rigth arr">
-                    <i class="fas fa-chevron-right"></i>
+                    <i @click="increaseCounter" class="fas fa-chevron-right"></i>
                 </div>
             </div>
         </section>

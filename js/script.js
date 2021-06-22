@@ -19,6 +19,17 @@ const app = new Vue(
                 'praia de dona ana',
                 'praia do camilo'
             ],
+            counter: 0
+        },
+        methods: {
+            increaseCounter(){
+                // condition ? exprIfTrue : exprIfFalse
+                (this.counter == this.imgs.length - 1) ? this.counter = 0 : this.counter++;
+            },
+            decreaseCounter(){
+                // condition ? exprIfTrue : exprIfFalse
+                (this.counter == 0) ? this.counter = this.imgs.length - 1 : this.counter--;
+            }
         }
     }
 );
