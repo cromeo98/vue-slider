@@ -23,7 +23,11 @@
                 </div>
                 <!-- middle (photos) -->
                 <div class="middle photos-cont">
-                    <img :src="'img/' + imgs[counter]" :alt="alts[counter]">
+                    <img  :src="'img/' + imgs[counter]" :alt="alts[counter]">
+
+                    <div class="nav-imgs">
+                        <i @click="counter = index" :class="(index == counter) ? 'active' : ''" v-for="(img, index) in imgs" class="fas fa-umbrella-beach"></i>
+                    </div>
                 </div>
 
                 <!-- right side (next arr)-->
